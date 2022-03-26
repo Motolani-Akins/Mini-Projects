@@ -37,6 +37,7 @@ guessBtn.addEventListener('click', function(){
 //Check if won
     if (guess === winningNum) {
         //Game Over - Won
+
         gameOver(true, `${winningNum} is correct, YOU WIN!`)
         
     } else {
@@ -45,13 +46,9 @@ guessBtn.addEventListener('click', function(){
 
         if(guessesLeft === 0){
         //Game Over - lost
+        gameOver(false, `Game Over loser. The correct number was ${winningNum}.Don't cry too much.`)
 
-        //Disable input
-        guessInput.disabled = true;
-        //Change border color
-        guessInput.style.borderColor = 'red';
-        //Set message
-        setMessage(`Game Over loser. The correct number was ${winningNum}.Don't cry too much.`, 'red'); 
+       
         } else{
         //Game Continues - answer wrong 
         //Change border color
