@@ -26,9 +26,9 @@ minNum.textContent = min;
 maxNum.textContent = max;
 
 //Play again Event Listener
-game.addEventListener('mousedown', function(e{
-    
-}))
+game.addEventListener('mousedown', function(e){
+    if(e.target.className === 'play-again')
+}
 
 //Listen for guess
 guessBtn.addEventListener('click', function(){
